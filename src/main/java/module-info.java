@@ -5,5 +5,6 @@ module edu.erciyes.FX {
     requires javafx.fxml;
 
     opens edu.erciyes.FX;
+    opens edu.erciyes.FXControls;
 
 }
