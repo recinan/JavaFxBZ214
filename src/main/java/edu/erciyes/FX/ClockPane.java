@@ -16,11 +16,12 @@ public class ClockPane extends Pane{
         setCurrentTime();
     }
 
-    private void setCurrentTime(){
+    void setCurrentTime(){
         LocalDateTime now = LocalDateTime.now();
         hour = now.getHour();
         min = now.getMinute();
         sec = now.getSecond();
+        PaintClock();
     }
 
     public void PaintClock(){
