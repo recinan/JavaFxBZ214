@@ -29,8 +29,15 @@ public class JavaFXControls extends Application {
         paneText.getChildren().add(text);
         root.setCenter(paneText);
 
-        Button btnLEFT = new Button("Left", new ImageView("file:resources/left.png"));
-        Button btnRIGHT = new Button("Right", new ImageView("file:resources/right.png"));
+        ImageView leftImage = new ImageView("file:C:\\Users\\Recep Inan\\Desktop\\DevExe\\Java\\JavaFxBasicsBZ214\\src\\main\\resources\\left.png");
+        ImageView rightImage = new ImageView("file:C:\\Users\\Recep Inan\\Desktop\\DevExe\\Java\\JavaFxBasicsBZ214\\src\\main\\resources\\right.png");
+        leftImage.setFitHeight(25);
+        leftImage.setFitWidth(35);
+        rightImage.setFitHeight(25);
+        rightImage.setFitWidth(35);
+
+        Button btnLEFT = new Button("Left", leftImage);
+        Button btnRIGHT = new Button("Right",rightImage);
         HBox paneButton = new HBox();
         paneButton.getChildren().addAll(btnLEFT, btnRIGHT);
         paneButton.setAlignment(Pos.CENTER);
