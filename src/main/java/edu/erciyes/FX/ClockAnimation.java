@@ -13,7 +13,6 @@ public class ClockAnimation extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         ClockPane clock = new ClockPane();
-
         EventHandler<ActionEvent> handler = event -> clock.setCurrentTime();
 
         Timeline animation = new Timeline(new KeyFrame(Duration.millis(1000), handler));
