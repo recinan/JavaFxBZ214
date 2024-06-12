@@ -24,6 +24,7 @@ public class FindGradeController {
 //                    "INNER JOIN enrollment ON student.studentId = enrollment.studentId\n" +
 //                    "INNER JOIN course ON enrollment.courseId = course.courseId\n" +
 //                    "WHERE student.studentId = ? AND enrollment.courseId = ?";
+//            preparedstatement = connection.prepareStatement(query);
             callableStatement = connection.prepareCall("CALL find_grade(?,?)");
         }catch(SQLException throwables){
             throwables.printStackTrace();
